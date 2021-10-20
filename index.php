@@ -17,7 +17,7 @@
 
     <!-- Navigation Bar -->
     <div class="navbar">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.php" class="active">Home</a>
         <a href="About.html">About</a>
         <a href="Store.html">Shop</a>
         <a href="Contact.html">Contact</a>
