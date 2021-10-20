@@ -18,10 +18,10 @@
     <!-- Navigation Bar -->
     <div class="navbar">
         <a href="index.php" class="active">Home</a>
-        <a href="About.html">About</a>
-        <a href="Store.html">Shop</a>
-        <a href="Contact.html">Contact</a>
-        <a href="Members.html">Members</a>
+        <a href="About.php">About</a>
+        <a href="Store.php">Shop</a>
+        <a href="Contact.php">Contact</a>
+        <a href="Members.php">Members</a>
     </div>
 
     <!-- <div class="rec"></div> -->
