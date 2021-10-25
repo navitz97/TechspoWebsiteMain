@@ -10,27 +10,43 @@
 </head>
 
 <body>
-    <!-- Website logo -->
-    <div class="logo">
-        <img src="images/Logo_2.png" alt="logo">
+    <!-- Navigation -->
+    <div class="navigation">
+        <!-- Website logo -->
+        <div class="logo">
+            <img src="images/logo.svg" alt="logo">
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="index.php" class="active">Home</a>
+            <a href="About.php">About</a>
+            <a href="Store.php">Shop</a>
+            <a href="Contact.php">Contact</a>
+            <a href="Members.php">Members</a>
+        </div>
     </div>
 
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="index.php" class="active">Home</a>
-        <a href="About.php">About</a>
-        <a href="Store.php">Shop</a>
-        <a href="Contact.php">Contact</a>
-        <a href="Members.php">Members</a>
-    </div>
+    <div class="home-hero">
+        <div class="home-hero_banner">
+            <div class="home-hero_banner-date">
+                <h1>2-3 November 2022</h1>
+            </div>
+            <div class="home-hero_banner-venue">
+                <p>
+                    Ticket Pro Dome, <br>
+                    Northgate Shopping Centre, Johannesburg
+                </p>
+            </div>
+        </div>    
 
-    <!-- <div class="rec"></div> -->
-    <div class="container">
-        <img src="Images/Welcome_image.png" width="100%" />
-        <div class="text">
-            <h2>A Big Tech Collabortion</h2><br>
-            Be prepared to be inspired, amazed and educated on the evolution of technology that
-            will impact your business growth.
+        <div class="home-hero_text">
+            <h1>A Big Tech Collaboration</h1>
+            <p>
+                Be prepared to be inspired, amazed and educated on the evolution of technology that
+                will impact your business growth.
+            </p>
+
         </div>
     </div>
 
