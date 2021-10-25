@@ -48,6 +48,8 @@
             </p>
 
         </div>
+
+        <button onclick="document.location='About.php'">Read More</button>
     </div>
 
 </body>

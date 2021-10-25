@@ -110,10 +110,29 @@ body {
     width: 80%;
     text-align: left;
     font-size: 200%;
-    position: absolute;
-    top: 60%;
+    position: relative;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: white;
+}
+
+.home-hero button {
+    position: absolute;
+    width: 250px;
+    height: 60px;
+    font-size: 130%;
+    border-radius: 50px;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    left: 43%;
+    bottom: 10%;
+}
+
+.home-hero button:hover {
+    background-color: #4191d7d3;
     color: white;
 }
 
