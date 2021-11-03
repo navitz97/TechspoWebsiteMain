@@ -79,12 +79,61 @@
         <a href="About.php">About</a>
         <a href="Store.php" class="active">Shop</a>
         <a href="Contact.php">Contact</a>
-        <a href="Members.php">Members</a>
+        <a href="login.php">Members</a>
     </div>
 
     <div class="store">
         <div class="products">
+            <?php
+            	if(!empty($_SESSION["cart"]))
+            	{
+        	?>
 
+            <div class="Wishlist_Container">
+                <a href="wishlist.php">
+
+                    <span>
+                        <?php $wish_count; ?>
+                    </span>
+                </a>
+            </div>
+
+            <?php
+            	}
+        	?>
+
+            <?php
+                $result = mysqli_query($Link, "SELECT * FROM courses");
+
+           	    while($row = mysqli_fetch_assoc($result))
+                {
+                    echo "
+                        <div class='product'>
+                            <form method = 'post' action = '' style='float: left; margin: 20px;'>
+                                <input type='hidden' name = 'code' value = ".$row['code'].">
+                                <div>
+                                    <img src=".$row['image']." style='height:70px;'>
+                                </div>
+                                <div>
+                                    ".$row['name']."
+                                </div>
+                                <div>
+                                    ".$row['price']."
+                                </div>
+
+                                <button type='submit'>Add to Cart</button>
+                            </form>
+                        </div>
+                    ";  
+                }
+
+                mysqli_close($Link);
+            ?>
+
+            <br>
+            <div>
+                <?php echo $status ?>
+            </div>
         </div>
     </div>
 </body>

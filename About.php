@@ -23,7 +23,7 @@
             <a href="About.php" class="active">About</a>
             <a href="Store.php">Shop</a>
             <a href="Contact.php">Contact</a>
-            <a href="Members.php">Members</a>
+            <a href="login.php">Members</a>
         </div>
     </div>
 
