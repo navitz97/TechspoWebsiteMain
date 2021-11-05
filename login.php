@@ -134,7 +134,7 @@
     <div class="navigation">
         <!-- Website logo -->
         <div class="logo">
-            <img src="images/logo.svg" alt="logo">
+            <img src="images/logo.png" alt="logo">
         </div>
 
         <!-- Navigation Bar -->
@@ -147,7 +147,27 @@
         </div>
     </div>
 
+    <div class="accountcontent">
+        <div class="accountshell">
+            <h2 style="font-size: 40px; padding: 20px 0px;">Login</h2>
 
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="loginform">
+                <label>Username:</label><br>
+                <input type="text" name="username" class="<?php echo (!empty($username)) ? 'is-valid' : '' ?> ">
+
+                <?php echo $username_err; ?>
+                <br><br>
+                <label>Password: </label><br>
+                <input type="password" name="password" class="<?php echo (!empty($password)) ? 'is-valid' : '' ?> ">
+
+                <?php echo $password_err; ?>
+                <br><br>
+                <p>Need an account? <a href="register.php">Register</a></p>
+                <br><br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
 
 </body>
 
