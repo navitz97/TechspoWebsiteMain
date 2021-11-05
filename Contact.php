@@ -12,7 +12,7 @@
 <body>
     <!-- Website logo -->
     <div class="logo">
-        <img src="images/Logo_2.png" alt="logo">
+        <img src="images/logo.png" alt="logo">
     </div>
 
     <!-- Navigation Bar -->

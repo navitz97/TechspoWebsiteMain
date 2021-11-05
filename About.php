@@ -14,7 +14,7 @@
     <div class="navigation">
         <!-- Website logo -->
         <div class="logo">
-            <img src="images/logo.svg" alt="logo">
+            <img src="images/logo.png" alt="logo">
         </div>
 
         <!-- Navigation Bar -->

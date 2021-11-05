@@ -68,18 +68,20 @@
 </head>
 
 <body>
-    <!-- Website logo -->
-    <div class="logo">
-        <img src="images/Logo_2.png" alt="logo">
-    </div>
+    <div class="navigation">
+        <!-- Website logo -->
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
 
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="index.php">Home</a>
-        <a href="About.php">About</a>
-        <a href="Store.php" class="active">Shop</a>
-        <a href="Contact.php">Contact</a>
-        <a href="login.php">Members</a>
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="index.php">Home</a>
+            <a href="About.php">About</a>
+            <a href="Store.php" class="active">Shop</a>
+            <a href="Contact.php">Contact</a>
+            <a href="login.php">Members</a>
+        </div>
     </div>
 
     <div class="store">
