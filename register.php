@@ -161,8 +161,12 @@
         </div>
     </div>
 
-    <div class="accountcontent">
-        <div class="accountshell">
+    <div class="membercontent" style="background-color: #49A8E2;">
+        <div class="memberleft">
+            <img src="Images/contact_cartoon.png" alt="">
+        </div>
+
+        <div class="membershell">
             <h2 style="font-size: 40px; padding: 20px 0px;">Register</h2>
 
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="loginform">

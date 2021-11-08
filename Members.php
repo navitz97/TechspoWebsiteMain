@@ -38,11 +38,11 @@
         </div>
     </div>
 
-    <div class="accountshell">
+    <div class="membershell">
         <h2 style="font-size: 40px; padding: 20px 0px;">Account Details</h2>
         <br><br>
 
-        <h1>You are currently logged in as <strong><?php echo 
+        <h1>Welcome back to Techspo, <strong><?php echo 
                     htmlspecialchars($_SESSION["username"]); ?></strong></h1>
 
         <br><br>

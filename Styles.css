@@ -11,7 +11,7 @@ body {
 .navigation {
     background-color: white;
     width: 100%;
-    height: 100px;
+    height: 120px;
 }
 
 .logo {
@@ -215,4 +215,85 @@ body {
 
 .product form button:hover {
     background-color: #0e90c4;
+}
+
+/* Member, Login and Register Page */
+
+/* -------------------------------------- */
+
+.membercontent {
+    width: 100%;
+    height: 900px;
+    /* background-color: #49A8E2; */
+}
+
+.memberleft {
+    float: left;
+    width: 900px;
+    height: 900px;
+    margin: 50px 0px 0px 50px;
+}
+
+.memberleft img{
+    width: 800px;
+    height: auto;
+    /* object-fit: contain; */
+    border-radius: 100px;
+    
+}
+
+.membershell {
+    float: right;
+    width: 480px;
+    /* margin: 0px auto 40px auto; */
+    padding: 20px;
+    margin: 50px 200px 0px 0px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.membershell h2 {
+    margin-bottom: 0px;
+}
+
+.loginform input[type=text], input[type=password] {
+    width: 100%;
+    height: 70px;
+    padding: 6px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.loginform input[type=submit] {
+    width: 40%;
+    background-color: #ffffff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 140px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    color: rgb(92, 92, 92);
+    cursor: pointer;
+}
+
+.loginform input[type=submit]:hover {
+    background-color: #375a79;
+    color: white;
+}
+
+@media all and (max-width: 800px) {
+    .membershell {
+        width: 100%;
+    }
+    .membershell h2 {
+        margin-left: 20px;
+    }
+    .memberform {
+        padding: 20px;
+    }
 }

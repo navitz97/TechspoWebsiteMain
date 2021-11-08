@@ -85,7 +85,7 @@
                                 $_SESSION["username"] = $username;
 
                                 //Redirect user to the account/members page
-                                header("location: account.php");
+                                header("location: Members.php");
                             }
 
                             else
@@ -147,9 +147,14 @@
         </div>
     </div>
 
-    <div class="accountcontent">
-        <div class="accountshell">
-            <h2 style="font-size: 40px; padding: 20px 0px;">Login</h2>
+    <div class="membercontent" style="background-color: #077BC2;">
+        <div class="memberleft">
+            <img src="Images/contact_cartoon.png" alt="">
+        </div>
+
+        <div class="membershell">
+            <h2 style="font-size: 40px; padding: 20px 0px 0px 20px;">Welcome Back!</h2>
+            <p style="padding-left: 20px">Log in to continue</p> <br>
 
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="loginform">
                 <label>Username:</label><br>
