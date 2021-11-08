@@ -5,7 +5,7 @@
     // Check if user is logged in
     if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true)
     {
-        header("location: account.php");
+        header("location: Members.php");
         exit;
     }
 
