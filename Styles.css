@@ -45,7 +45,7 @@ body {
 }
 
 .navbar a:hover {
-    color: #525658;
+    color: #375a79;
 }
 
 .navbar .active {
@@ -190,21 +190,43 @@ body {
 /* -------------------------------------- */
 
 .store {
-    width: 60%;
-    min-height: 700px;
+    width: 50%;
+    min-height: 800px;
+    padding-left: 10px;
     background-color: #ffffff;
     margin: 60px auto;
+}
+
+.store h2 {
+    color: #375a79;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.storebody {
+    background-color: #077BC2;
+}
+
+.storeheading {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.itemButton {
+    margin-top: 10px;
 }
 
 .product form {
     width: 250px;
     border: 1px solid #dedede;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px;
 }
 
 .product form button {
     width: 40%;
-    background-color: #076287;
+    background-color: #70b1e9;
     color: white;
     height: 25px;
     width: 100px;
@@ -214,7 +236,7 @@ body {
 }
 
 .product form button:hover {
-    background-color: #0e90c4;
+    background-color: #9ec7eb;
 }
 
 /* Member, Login and Register Page */
@@ -234,12 +256,11 @@ body {
     margin: 50px 0px 0px 50px;
 }
 
-.memberleft img{
+.memberleft img {
     width: 800px;
     height: auto;
     /* object-fit: contain; */
     border-radius: 100px;
-    
 }
 
 .membershell {
@@ -255,6 +276,15 @@ body {
 
 .membershell h2 {
     margin-bottom: 0px;
+}
+
+.accountshell {
+    width: 480px;
+    margin: 0px auto 40px auto;
+    padding: 20px;
+    border: 1px solid #077BC2;
+    background-color: white;
+    color: rgb(92, 92, 92);
 }
 
 .loginform input[type=text], input[type=password] {
@@ -299,4 +329,68 @@ body {
     .memberform {
         padding: 20px;
     }
+}
+
+/* Cart */
+
+/* -------------------------------------- */
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-container .cancel {
+    background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
 }

@@ -1,5 +1,5 @@
 <?php
-    $Link = mysqli_connect("localhost", "root", "", "ctucourses");
+    $Link = mysqli_connect("localhost", "root", "", "techspomerch");
 
     if($Link === false)
     {

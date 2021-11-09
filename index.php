@@ -24,6 +24,7 @@
             <a href="Store.php">Shop</a>
             <a href="Contact.php">Contact</a>
             <a href="login.php">Members</a>
+            <a href="cart.php">Cart</a>
         </div>
     </div>
 

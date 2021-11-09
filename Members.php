@@ -35,10 +35,11 @@
             <a href="Store.php">Shop</a>
             <a href="Contact.php">Contact</a>
             <a href="login.php" class="active">Members</a>
+            <a href="cart.php">Cart</a>
         </div>
     </div>
 
-    <div class="membershell">
+    <div class="accountshell">
         <h2 style="font-size: 40px; padding: 20px 0px;">Account Details</h2>
         <br><br>
 

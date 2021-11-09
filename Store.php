@@ -8,7 +8,7 @@
         $code = $_POST['code'];
         $result = mysqli_query(
             $Link,
-            "SELECT * FROM courses WHERE code = '$code'"
+            "SELECT * FROM merch WHERE code = '$code'"
         );
 
         $row = mysqli_fetch_assoc($result);
@@ -67,7 +67,7 @@
     <title>Store</title>
 </head>
 
-<body>
+<body class="storebody">
     <div class="navigation">
         <!-- Website logo -->
         <div class="logo">
@@ -81,10 +81,13 @@
             <a href="Store.php" class="active">Shop</a>
             <a href="Contact.php">Contact</a>
             <a href="login.php">Members</a>
+            <a href="cart.php">Cart</a>
         </div>
     </div>
 
+    <h1 class="storeheading">Shop for Techspo 2022</h1>
     <div class="store">
+        <h2>Clothing and Merchandise</h2>
         <div class="products">
             <?php
             	if(!empty($_SESSION["cart"]))
@@ -105,7 +108,7 @@
         	?>
 
             <?php
-                $result = mysqli_query($Link, "SELECT * FROM courses");
+                $result = mysqli_query($Link, "SELECT * FROM merch");
 
            	    while($row = mysqli_fetch_assoc($result))
                 {
@@ -114,16 +117,16 @@
                             <form method = 'post' action = '' style='float: left; margin: 20px;'>
                                 <input type='hidden' name = 'code' value = ".$row['code'].">
                                 <div>
-                                    <img src=".$row['image']." style='height:70px;'>
-                                </div>
+                                    <img src=".$row['image']." style='height:150px; width: 150px; object-fit: contain;'>
+                                </div> <br>
                                 <div>
                                     ".$row['name']."
-                                </div>
+                                </div> <br>
                                 <div>
                                     ".$row['price']."
                                 </div>
 
-                                <button type='submit'>Add to Cart</button>
+                                <button type='submit' class='itemButton'>Add to Cart</button>
                             </form>
                         </div>
                     ";  
