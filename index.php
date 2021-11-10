@@ -53,6 +53,9 @@
         <button onclick="document.location='About.php'">Read More</button>
     </div>
 
+    <footer>
+        <p>&copy; Techspo 2022. All Rights Reserved. Website by Stefan van Deventer 2021</p>
+    </footer>
 </body>
 
 </html>

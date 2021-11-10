@@ -178,6 +178,32 @@
             </tbody>
         </table>
 
+        <button class="open-button" onclick="openForm()">Place Order</button>
+
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Shipping Details</h1>
+
+                <label for="address"><b>Address</b></label>
+                <input type="text" placeholder="Address" name="address" class="shipping" required>
+                <input type="text" placeholder="Suburb" name="address1" class="shipping" required>
+                <input type="text" placeholder="City" name="address2" class="shipping" required>
+                <input type="text" placeholder="Postal Code" name="address3" class="shipping" required>
+
+                <label for="name"><b>Fullname</b></label>
+                <input type="text" placeholder="Enter Fullname" name="name" class="shipping" required>
+
+                <label for="tel">Phone number</label>
+                <input type="tel" placeholder="Enter Phone number" name="name" class="shipping" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" class="shipping" required>
+            </form>
+
+            <button type="button" id="myConfBtn" class="btn">Place Order</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </div>
+
         <?php
                 }
                 
@@ -190,6 +216,105 @@
         <?php echo $status; ?>
 
     </div>
+
+    <!-- <button id="myBtn">Open Modal</button> -->
+
+    <div id="myModal1" class="modal">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Confirm Order</h2>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to place your order?</p>
+                <button type="button" id="myConfBtn2" class="btn">Place Order</button>
+            </div>
+            <div class="modal-footer">
+                <!-- <h3>Modal Footer</h3> -->
+            </div>
+        </div>
+
+    </div>
+
+    <div id="myModal2" class="modal">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close2">&times;</span>
+                <h2>Order Confirmed.</h2>
+            </div>
+            <div class="modal-body">
+                <p>Thank you! You will receive an email shortly</p>
+                <button type="button" id="myConfBtn3" class="btn">Close</button>
+            </div>
+            <div class="modal-footer">
+                <!-- <h3>Modal Footer</h3> -->
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+
+    var modal = document.getElementById("myModal1");
+    var btn = document.getElementById("myConfBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    var modal2 = document.getElementById("myModal2");
+    var btn2 = document.getElementById("myConfBtn2");
+    var btn3 = document.getElementById("myConfBtn3");
+    var span2 = document.getElementsByClassName("close2")[0];
+
+    btn2.onclick = function() {
+        modal2.style.display = "block";
+        modal.style.display = "none";
+    }
+
+    btn3.onclick = function() {
+        modal2.style.display = "none";
+    }
+
+    span2.onclick = function() {
+        modal2.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal2) {
+            modal2.style.display = "none";
+        }
+    }
+    </script>
+
+    <footer>
+        <p>&copy; Techspo 2022. All Rights Reserved. Website by Stefan van Deventer 2021</p>
+    </footer>
 
 </body>
 

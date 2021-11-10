@@ -188,7 +188,11 @@
                 <input type="submit" value="Submit">
             </form>
         </div>
+    </div>
 
+    <footer>
+        <p>&copy; Techspo 2022. All Rights Reserved. Website by Stefan van Deventer 2021</p>
+    </footer>
 </body>
 
 </html>

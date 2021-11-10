@@ -287,7 +287,7 @@ body {
     color: rgb(92, 92, 92);
 }
 
-.loginform input[type=text], input[type=password] {
+.loginform input[type=text], .loginform input[type=password] {
     width: 100%;
     height: 70px;
     padding: 6px 10px;
@@ -344,7 +344,7 @@ body {
     opacity: 0.8;
     position: fixed;
     bottom: 23px;
-    right: 28px;
+    right: 800px;
     width: 280px;
 }
 
@@ -352,9 +352,9 @@ body {
     display: none;
     position: fixed;
     bottom: 0;
-    right: 15px;
+    right: 778px;
     border: 3px solid #f1f1f1;
-    z-index: 9;
+    z-index: 1;
 }
 
 .form-container {
@@ -363,34 +363,189 @@ body {
     background-color: white;
 }
 
-.form-container input[type=text], .form-container input[type=password] {
-    width: 100%;
+.form-container input[type=text], .form-container input[type=password], .form-container input[type=tel] {
+    width: 90%;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
     background: #f1f1f1;
 }
 
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+.form-container input[type=text]:focus, .form-container input[type=password]:focus, .form-container input[type=tel]:focus {
     background-color: #ddd;
     outline: none;
 }
 
-.form-container .btn {
+.form-popup .btn {
     background-color: #04AA6D;
     color: white;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
     width: 100%;
+    height: 48px;
     margin-bottom: 10px;
     opacity: 0.8;
 }
 
-.form-container .cancel {
+.form-popup .cancel {
     background-color: red;
 }
 
-.form-container .btn:hover, .open-button:hover {
+.form-popup .btn:hover, .open-button:hover {
     opacity: 1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.close, .close2 {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus, .close2:hover, .close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #077BC2;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-body button {
+    background-color: #70b1e9;
+    color: white;
+    height: 25px;
+    width: 100px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #077BC2;
+    color: white;
+}
+
+/* Cart */
+
+/* -------------------------------------- */
+.contactcontent {
+    background-color: #077BC2;
+    width: 100%;
+    height: 1070px;
+}
+
+.contactform {
+    width: 50%;
+    float: left;
+}
+
+.contactform iframe {
+    margin-left: 150px;
+    background-color: white;
+}
+
+.contactform h1 {
+    color: white;
+    text-align: center;
+}
+
+.contactdetails {
+    width: 50%;
+    float: right;
+}
+
+.contacticon {
+    width: 50px;
+    height: auto;
+    filter: invert(100%); 
+    -webkit-filter: invert(100%);
+}
+
+.contactinfo {
+    width: 100%;
+    margin: 40px 0px 40px 180px;
+    color: white;
+}
+
+.contactdetails iframe {
+    margin-left: 150px;
+}
+
+.contactdetails h1{
+    color: white;
+    text-align: center;
+}
+
+/* Footer */
+
+/* -------------------------------------- */
+footer {
+    background-color: whitesmoke;
+    color: #9ec7eb;
+    text-align: left;
+    margin-top: 20px;
+    text-align: center;
+    height: 80px;
+    padding-top: 60px;
 }
