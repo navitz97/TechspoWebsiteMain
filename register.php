@@ -3,8 +3,8 @@
     require_once "passw_config.php";
 
     # Variables
-    $username = $password = $confirm_password = "";
-    $username_err = $password_err = $confirm_password_err = "";
+    $name = $lastname = $email_address = $username = $password = $confirm_password = "";
+    $name_err = $lastname_err = $email_address_err = $username_err = $password_err = $confirm_password_err = "";
 
     # Sending data when the form is submitted
     if($_SERVER["REQUEST_METHOD"] == "POST")
