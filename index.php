@@ -54,7 +54,7 @@
     </div>
 
     <footer>
-        <p>&copy; Techspo 2022. All Rights Reserved. Website by Stefan van Deventer 2021</p>
+        <p>&copy; Techspo 2022. All Rights Reserved. Website by Stefan van Deventer & Dewald Oberholzer 2021</p>
     </footer>
 </body>
 
